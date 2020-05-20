@@ -90,5 +90,3 @@ class StepFunctionsInternalDecorator(StepDecorator):
         # Add 90 days since AWS Step Functions maintains execution history for
         # that long.
         return delta + (90 * 24 * 60 * 60) + int(time.time())
-
-
